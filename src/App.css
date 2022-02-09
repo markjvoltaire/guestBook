@@ -1,9 +1,24 @@
 body.light-mode {
-  background-color: #fff;
-  color: #333;
+  background-color: chocolate;
+  color: white;
   transition: background-color 0.3s ease;
 }
 body.dark-mode {
   background-color: #1a1919;
   color: #999;
+}
+
+body {
+  background-color: chocolate;
+  transition: background-color 0.3s ease;
+}
+
+.title {
+  text-align: center;
+}
+
+.guest-input {
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }

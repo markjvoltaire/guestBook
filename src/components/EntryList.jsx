@@ -5,8 +5,7 @@ export default function EntryList() {
   const { entries } = useEntries();
 
   return (
-    <div>
-      <h1>Hello</h1>
+    <div className="guest-input">
       {entries.map((entry) => (
         <div key={entry.id}>
           <p>{entry.entry}</p>

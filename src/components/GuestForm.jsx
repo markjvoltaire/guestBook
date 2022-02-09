@@ -27,8 +27,9 @@ export default function GuestForm() {
   );
 
   return (
-    <div>
+    <div className='guest-input'>
       <DarkModeToggle />
+
       <form onSubmit={handleSubmit}>
         {user ? null : guestEntryInput}
 

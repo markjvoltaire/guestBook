@@ -5,7 +5,7 @@ import { EntryProvider } from './context/EntryContext';
 function App() {
   return (
     <div className="App">
-      <h1>Guest Book</h1>
+      <h1 className="title">Guest Book</h1>
       <EntryProvider>
         <Home />
       </EntryProvider>
