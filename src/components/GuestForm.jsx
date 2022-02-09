@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useEntries } from '../context/EntryContext';
 import { useUser } from '../context/UserContext';
+import DarkModeToggle from '../DarkMode/DarkModeToggle';
+import '../App.css';
 
 export default function GuestForm() {
   const [name, setName] = useState('');
@@ -26,6 +28,7 @@ export default function GuestForm() {
 
   return (
     <div>
+      <DarkModeToggle />
       <form onSubmit={handleSubmit}>
         {user ? null : guestEntryInput}
 
