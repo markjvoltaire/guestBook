@@ -3,7 +3,6 @@ import { useEntries } from '../context/EntryContext';
 
 export default function EntryList() {
   const { entries } = useEntries();
-  console.log('entries', entries);
 
   return (
     <div>

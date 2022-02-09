@@ -19,15 +19,10 @@ export default function GuestForm() {
     e.preventDefault();
     updateGuestEntry();
   };
-  console.log('entries', entries);
-  console.log('user', user);
-  console.log('name', name);
 
   const guestEntryInput = (
     <input type="text" placeholder="name" value={name} onChange={(e) => setName(e.target.value)} />
   );
-
-  // const message = user ? `welcome to Guest Book ${user}` : 'Whats your name';
 
   return (
     <div>
