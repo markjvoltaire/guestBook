@@ -1,11 +1,14 @@
 import './App.css';
 import Home from './views/Home';
+import { EntryProvider } from './context/EntryContext';
 
 function App() {
   return (
     <div className="App">
       <h1>Guest Book</h1>
-      <Home />
+      <EntryProvider>
+        <Home />
+      </EntryProvider>
     </div>
   );
 }
