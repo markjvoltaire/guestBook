@@ -38,10 +38,10 @@ export default function GuestForm() {
     <div className="guestinput">
       <DarkModeToggle />
 
-      <form onSubmit={handleSubmit}>
+      <form className="form" onSubmit={handleSubmit}>
         {user ? null : guestEntryInput}
 
-        <div>
+        <div className="inputs">
           <label>
             Entry
             <input
@@ -51,10 +51,18 @@ export default function GuestForm() {
             />
           </label>
         </div>
-        <div>
+        <div className="button">
           <button>Submit Entry</button>
         </div>
       </form>
+      <button
+        onClick={() => {
+          setUser('');
+          setName('');
+        }}
+      >
+        New User Entry
+      </button>
     </div>
   );
 }
