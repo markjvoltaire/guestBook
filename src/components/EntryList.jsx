@@ -7,9 +7,9 @@ export default function EntryList() {
   return (
     <div className="guest-input">
       {entries.map((entry) => (
-        <div key={entry.id}>
+        <div className="userEntry" key={entry.id}>
           <p>{entry.entry}</p>
-          <p>{entry.name}</p>
+          <p>-{entry.name}</p>
         </div>
       ))}
     </div>

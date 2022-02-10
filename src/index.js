@@ -5,10 +5,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import { UserProvider } from './context/UserContext';
+import Header from './components/Header/Header';
 
 ReactDOM.render(
   <React.StrictMode>
     <UserProvider>
+      <Header />
       <App />
     </UserProvider>
   </React.StrictMode>,

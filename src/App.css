@@ -28,3 +28,11 @@ body {
   align-items: center;
   display: flex;
 }
+
+.userEntry {
+  padding: 50px;
+}
+
+.header-welcome {
+  position: relative;
+}
