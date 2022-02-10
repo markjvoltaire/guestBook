@@ -9,7 +9,7 @@ export default function EntryList() {
       {entries.map((entry) => (
         <div key={entry.id}>
           <p>{entry.entry}</p>
-          <p>User: {entry.name}</p>
+          <p>{entry.name}</p>
         </div>
       ))}
     </div>

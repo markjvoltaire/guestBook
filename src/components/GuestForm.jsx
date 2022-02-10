@@ -23,22 +23,33 @@ export default function GuestForm() {
   };
 
   const guestEntryInput = (
-    <input type="text" placeholder="name" value={name} onChange={(e) => setName(e.target.value)} />
+    <label>
+      name
+      <input
+        type="text"
+        placeholder="name"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+      />
+    </label>
   );
 
   return (
-    <div className='guest-input'>
+    <div className="guestinput">
       <DarkModeToggle />
 
       <form onSubmit={handleSubmit}>
         {user ? null : guestEntryInput}
 
         <div>
-          <input
-            placeholder="enter entry"
-            value={guestEntry}
-            onChange={(e) => setGuestEntry(e.target.value)}
-          />
+          <label>
+            Entry
+            <input
+              placeholder="enter entry"
+              value={guestEntry}
+              onChange={(e) => setGuestEntry(e.target.value)}
+            />
+          </label>
         </div>
         <div>
           <button>Submit Entry</button>
