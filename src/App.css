@@ -35,4 +35,20 @@ body {
 
 .header-welcome {
   position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.dark-mode-toggle {
+  padding-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.new-user-button {
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }

@@ -35,34 +35,38 @@ export default function GuestForm() {
   );
 
   return (
-    <div className="guestinput">
-      <DarkModeToggle />
+    <>
+      <div>
+        <DarkModeToggle />
+      </div>
+      <div className="guestinput">
+        <form className="form" onSubmit={handleSubmit}>
+          {user ? null : guestEntryInput}
 
-      <form className="form" onSubmit={handleSubmit}>
-        {user ? null : guestEntryInput}
-
-        <div className="inputs">
-          <label>
-            Entry
-            <input
-              placeholder="enter entry"
-              value={guestEntry}
-              onChange={(e) => setGuestEntry(e.target.value)}
-            />
-          </label>
-        </div>
-        <div className="button">
-          <button>Submit Entry</button>
-        </div>
-      </form>
-      <button
-        onClick={() => {
-          setUser('');
-          setName('');
-        }}
-      >
-        New User Entry
-      </button>
-    </div>
+          <div className="inputs">
+            <label>
+              Entry
+              <input
+                placeholder="enter entry"
+                value={guestEntry}
+                onChange={(e) => setGuestEntry(e.target.value)}
+              />
+            </label>
+          </div>
+          <div className="button">
+            <button>Submit Entry</button>
+          </div>
+          <button
+            className="new-user-button"
+            onClick={() => {
+              setUser('');
+              setName('');
+            }}
+          >
+            New User Entry
+          </button>
+        </form>
+      </div>
+    </>
   );
 }
